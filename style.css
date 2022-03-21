@@ -1,0 +1,129 @@
+body{
+    font-family: 'Electrolize', sans-serif;
+    background-color: black;
+}
+
+h1,h2,h3,h4,.h1,.h2,.h3,.h4{
+    font-family: 'Orbitron';
+}
+/* (box)variable
+nombre = contenido */
+:root{
+   --main-color: #191769;
+   --accent-color: #2871cc;
+}
+.text-main{
+    color: var(--main-color);
+}
+.text-accent{
+    color:var(--accent-color);
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-accent{
+    background-color: var(--accent-color);
+}
+.borderNav{
+    border-bottom: 2px solid white;
+}
+.bg-nav{
+    border-bottom: 4px solid var(--accent-color);
+    background-color: black;
+}
+li a:hover{
+    color: var(--accent-color) !important;
+    transition: 1s;
+    transform:scale(1.3);
+    padding-top: 0px;
+}
+.bgHead{
+    background:linear-gradient(black 10%, transparent, black),
+    linear-gradient(to right, black 5%, transparent, black 99%), url(./media/img/tech.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.flecha{
+    animation: animation-flecha 2.5s infinite ease-in-out;
+}
+
+@keyframes animation-flecha{
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+.scale{
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+.textIn{
+    animation: textIn 1.5s 1.5s ease-in-out backwards;
+    
+}
+
+@keyframes textIn {
+    0%{
+        transform: translateY(400px);
+        opacity: 0;
+    }
+   
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.borderCard{
+    border-bottom: 2px solid var(--accent-color);
+}
+.btnClick{
+    background: 
+    linear-gradient(to right, var(--main-color) 2px, transparent 2px) 0 0,
+    linear-gradient(to right, var(--main-color) 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, var(--main-color) 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, var(--main-color) 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, var(--main-color) 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, var(--main-color) 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, var(--main-color) 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, var(--main-color) 2px, transparent 2px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+.btnClick:hover{
+    letter-spacing: 3px;
+}
+.textSpace{
+    letter-spacing: 3px;
+}
+.bgFooter{
+    background:linear-gradient(black 10%, transparent, black 80%) ,url(./media/img/footer2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
